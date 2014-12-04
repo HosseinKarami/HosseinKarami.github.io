@@ -4,7 +4,7 @@ title:  "شروع به نوشتن"
 permalink: blog/start
 parsidate: جمعه ۱۴ آذر ۱۳۹۳
 comments: false
-imglink: http://localhost:3000/assets/img/post/typewriter.jpg
+imglink: http://hosseinkarami.com/assets/img/post/typewriter.jpg
 imgauthor: http://florianklauer.de/
 imgauthorname: Florian Klauer
 ---
