@@ -1,0 +1,54 @@
+<header class="header">
+    <section class="about">
+      <a href="/">
+        <img src="{{site.url}}/assets/img/me.png" alt="Hossein Karami">
+      </a>
+      <h1>حسین کرمی</h1>
+      <p>توسعه‌دهنده رابط کاربری</p>
+      <a href="#" class="nav-menu menu-open"><core-icon icon="menu"></core-icon></a>
+      <nav class="nav nav-list">
+        <ul>
+          <li>
+            <a href="{{site.url}}/works">
+              <div class="center">
+                <h4 class="middle">نمونه کارها</h4>
+                <paper-ripple fit></paper-ripple>
+              </div>
+            </a>
+          </li>
+          <li>{% if site.github %}
+            <a href="https://github.com/{{ site.github }}" target="_blank">
+              <div class="center">
+                <h4 class="middle">گیت‌هاب</h4>
+                <paper-ripple fit></paper-ripple>
+              </div>
+            </a>{% endif %}
+          </li>
+          <li>{% if site.twitter %}
+            <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
+              <div class="center">
+                <h4 class="middle">توییتر</h4>
+                <paper-ripple fit></paper-ripple>
+              </div>
+            </a>{% endif %}
+          </li>
+          <li>{% if site.behance %}
+            <a href="https://www.behance.net/{{ site.behance }}" target="_blank">
+              <div class="center">
+                <h4 class="middle">بیهنس</h4>
+                <paper-ripple fit></paper-ripple>
+              </div>
+            </a>{% endif %}
+          </li>
+          <li>
+            <a href="{{site.url}}/feed.xml">
+              <div class="center">
+                <h4 class="middle">RSS</h4>
+                <paper-ripple fit></paper-ripple>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>

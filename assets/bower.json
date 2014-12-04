@@ -1,0 +1,21 @@
+{
+  "name": "HosseinKarami",
+  "version": "0.0.0",
+  "authors": [
+    "Hossein Karami <hosseinkarami@outlook.com>"
+  ],
+  "description": "My Polymer Experiment",
+  "license": "MIT",
+  "homepage": "http://hosseinkarami.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "Polymer/paper-elements#~0.5.1"
+  }
+}

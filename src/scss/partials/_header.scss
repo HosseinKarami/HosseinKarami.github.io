@@ -1,0 +1,136 @@
+.header {
+  @include position(relative, 0 0 0 0);
+  text-align: center;
+  background: #f5f6f5;
+  height: 100%;
+  width: 100%;
+  @include phone{
+    width:100%;
+    @include position(relative, 0 0 0 0);
+  }
+  @include tablet{
+    width:100%;
+    @include position(relative, 0 0 0 0);
+  }
+  @include desktop{
+    width: 300px;
+    @include position(fixed, 0px 0px 0px 0);
+  }
+  @include largedesktop{
+    width: 340px;
+    @include position(fixed, 0px 0px 0px 0);
+  }
+  @include biglargedesktop{
+    width: 340px;
+    @include position(fixed, 0px 0px 0px 0);
+  }
+
+  .about{
+    padding: 2.5em 0;
+    img{
+      width: 150px;
+    }
+    h1{
+      font-family: WMitra;
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    p{
+      font-family: WMitra;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .nav-menu{
+      display: block;
+      @include phone{
+        display: block;
+      }
+      @include tablet{
+        display: block;
+      }
+      @include desktop{
+        display: none;
+      }
+      @include largedesktop{
+        display: none;
+      }
+      @include biglargedesktop{
+        display: none;
+      }
+      core-icon{
+        color: #333;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        &:hover{
+          background: #eee;
+        }
+      }
+    }
+    nav{
+      @include position(absolute, 0px 0 0px -80% );
+      text-align: center;
+      direction: rtl;
+      width: 80%;
+      @include phone{
+        width:80%;
+        @include position(absolute, 0px 0 0px -80% );
+      }
+      @include tablet{
+        width:80%;
+        @include position(absolute, 0px 0 0px -80% );
+      }
+      @include desktop{
+        width: 100%;
+        @include position(absolute, 280px 0px 0px 0px );
+      }
+      @include largedesktop{
+        width: 100%;
+        @include position(absolute, 280px 0px 0px 0px );
+      }
+      @include biglargedesktop{
+        width: 100%;
+        @include position(absolute, 280px 0px 0px 0px );
+      }
+      ul{
+        padding: 0;
+        list-style: none;
+      }
+      li{
+        @include position(relative, 0 0 0 0 );
+        height: 49px;
+        height: 3.0625rem;
+        a{
+          color: #333;
+          transition: 100ms linear 0s;
+          text-decoration: none;
+          outline: none;
+          &:hover{
+            color: #0000CD;
+          }
+        }
+        .center{
+          position: relative;
+          display: table;
+          width: 100%;
+          height: 100%;
+          .middle{
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: WMitra, "courier-std";
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+paper-ripple {
+  color: #333;
+}

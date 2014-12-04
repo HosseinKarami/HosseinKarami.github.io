@@ -1,0 +1,26 @@
+footer {
+ @include position(relative, 0 0 0 0);
+  margin:0;
+  @include phone{
+    margin:0;
+  }
+  @include tablet{
+    margin:0;
+  }
+  @include desktop{
+    margin:0 300px 0 0;
+  }
+  @include largedesktop{
+    margin:0 340px 0 0;
+  }
+  @include biglargedesktop{
+    margin:0 340px 0 0;
+  }
+  p{
+    font-family: "Courier New","Courier","monospace"courier-std;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 1em 1em;
+    text-align: center;
+  }
+}

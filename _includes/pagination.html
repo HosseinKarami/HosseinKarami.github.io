@@ -1,0 +1,20 @@
+<section class="paginator">
+  <div class="wrapper">
+    {% if paginator.previous_page %}
+
+        {% if paginator.page == 2 %}
+    <a href="/blog/" class="paginate newer">نوشته‌های تازه‌تر<i>←</i></a>
+        {% else %}
+    <a href="/blog/page{{paginator.previous_page}}" class="paginate newer">نوشته‌های تازه‌تر<i>←</i></a>
+        {% endif %}
+      {% else %}
+        <span class="paginate previous"></span>
+      {% endif %}
+    {% if paginator.next_page %}
+    <a href="/blog/page{{paginator.next_page}}" class="paginate older"><i>→</i>نوشته‌های کهنه‌تر</a>
+      {% else %}
+    <span class="paginate next"></span>
+    {% endif %}
+
+  </div>
+</section>

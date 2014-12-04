@@ -1,0 +1,20 @@
+---
+layout: blog
+title: وبلاگ | حسین کرمی
+---
+{% for post in paginator.posts %}
+<article>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <h4>{{ post.parsidate }}</h4>
+  <section class="content">
+    {{ post.content | truncatewords: 100 }}
+  </section>
+  <a href="{{ post.url }}" class="link">
+    <paper-button class="more">
+      <core-icon icon="chevron-left"></core-icon>
+      <span>بیشتر بخوانید</span>
+    </paper-button>
+  </a>
+</article>
+{% endfor %}
+{% include pagination.html %}

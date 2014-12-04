@@ -1,0 +1,89 @@
+
+.js-menu-open body {
+  overflow-x: hidden; }
+
+@media screen and (max-width: 768px) {
+  .js-menu-open body {
+
+    transform: translate3d(80%, 0, 0);
+  }
+
+}
+
+
+.paginator{
+  float: left;
+  width: 100%;
+  margin-top: 3.5rem;
+  a,
+  span {
+    padding: 1rem 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: WMitra;
+    text-decoration: none;
+    float: left;
+    @include phone{
+        font-size: 1.2rem;
+      }
+      @include tablet{
+        font-size: 1.2rem;
+      }
+      @include desktop{
+        font-size: 1.5rem;
+      }
+      @include largedesktop{
+        font-size: 1.5rem;
+      }
+      @include biglargedesktop{
+        font-size: 1.5rem;
+      }
+  }
+  a {
+    color: #0000CD;
+    text-decoration: none;
+    outline: none;
+    &:hover{
+      color: darken(#0000CD, 20%);
+    }
+  }
+
+  .wrapper{
+    margin: 0 -0.5% 0 0.5%;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.newer, .previous {
+  width: 50%;
+  text-align: left;
+  i{
+    position: relative;
+    top: 5px;
+    font-family: WMitra, serif;
+    right: 5px;
+  }
+}
+.older, .next {
+  width: 50%;
+  text-align: right;
+  i{
+    position: relative;
+    top: 5px;
+    font-family: WMitra, serif;
+    left: 5px;
+  }
+}
+
+.previous, .next{
+  color: lighten(#444, 10%);
+  display: none;
+}
+
+.home {
+  min-height: 100vh;
+  footer{
+    display: none;
+  }
+}

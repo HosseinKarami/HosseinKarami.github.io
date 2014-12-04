@@ -1,0 +1,37 @@
+---
+layout: blog
+---
+<article>
+  <a href="{{ site.url }}/blog" class="link">
+    <paper-button class="button">
+      <core-icon icon="exit-to-app"></core-icon>
+      <span>بازگشت</span>
+    </paper-button>
+  </a>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <h4>{{ page.parsidate }}</h4>
+    <section class="content">
+      <div class="imgpost">
+        <img src="{{ page.imglink }}">
+        <a href="{{ page.imgauthor }}" class="cc" target="_blank">Photo credit: {{ page.imgauthorname }}</a>
+      </div>
+      {{ content }}
+    </section>
+    <hr></hr>
+    {% if page.comments %}
+    <div class="disqus">
+      <div id="disqus_thread"></div>
+    </div>
+    <script>
+      var disqus_url = {%if page.disqus %}'{{ page.disqus }}'{%else %}'http://hosseinkarami.com{{ page.url }}'{% endif %};
+      var disqus_title = '{{ page.title }}';
+      var disqus_shortname = 'hosseinkarami';
+      (function() {
+        var dsq = document.createElement('script');
+        dsq.async = dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        document.getElementsByTagName('head')[0].appendChild(dsq);
+      })();
+    </script>
+    {% endif %}
+  </article>
+
