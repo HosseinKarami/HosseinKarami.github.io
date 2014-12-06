@@ -20,7 +20,7 @@ layout: blog
     <hr></hr>
     {% if page.comments %}
     <div class="disqus">
-      <div id="disqus_thread" style="overflow-y: auto;"></div>
+      <div id="disqus_thread"></div>
     </div>
     <script>
       var disqus_url = {%if page.disqus %}'{{ page.disqus }}'{%else %}'http://hosseinkarami.com{{ page.url }}'{% endif %};
