@@ -17,10 +17,25 @@ footer {
     margin:0 340px 0 0;
   }
   p{
-    font-family: "Courier New","Courier","monospace"courier-std;
-    font-size: 1.2rem;
+    font-family: "Courier New","Courier","monospace",courier-std;
+    font-size: .9rem;
     font-weight: 400;
     margin: 0 1em 1em;
     text-align: center;
+    @include phone{
+      font-size: .9rem;
+    }
+    @include tablet{
+      font-size: .9rem;
+    }
+    @include desktop{
+      font-size: 1rem;
+    }
+    @include largedesktop{
+      font-size: 1rem;
+    }
+    @include biglargedesktop{
+      font-size: 1rem;
+    }
   }
 }

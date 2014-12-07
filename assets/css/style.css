@@ -634,11 +634,26 @@ footer {
     footer {
       margin: 0 340px 0 0; } }
   footer p {
-    font-family: "Courier New", "Courier", "monospace" courier-std;
-    font-size: 1.2rem;
+    font-family: "Courier New", "Courier", "monospace", courier-std;
+    font-size: 0.9rem;
     font-weight: 400;
     margin: 0 1em 1em;
     text-align: center; }
+    @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
+      footer p {
+        font-size: 0.9rem; } }
+    @media only screen and (min-width: 30.1em) {
+      footer p {
+        font-size: 0.9rem; } }
+    @media only screen and (min-width: 48em) {
+      footer p {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 62.5em) {
+      footer p {
+        font-size: 1rem; } }
+    @media only screen and (min-width: 81.25em) {
+      footer p {
+        font-size: 1rem; } }
 
 ::-moz-selection {
   background: #333;
