@@ -2,6 +2,12 @@
   // padding: 5rem 0;
   text-align: center;
   min-height: 100vh;
+  &.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   img{
     width: 200px;
     @include phone{
@@ -97,3 +103,9 @@
     }
   }
 }
+
+.waves-effect.waves-side .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: rgba(51, 51, 51, 0.35);
+  }

@@ -10,10 +10,10 @@ title: وبلاگ | حسین کرمی
     {{ post.content | truncatewords: 100 }}
   </section>
   <a href="{{ post.url }}" class="link">
-    <paper-button class="more">
-      <core-icon icon="chevron-left"></core-icon>
+    <div class="more waves-effect waves-side">
+      <i class="mdi-navigation-chevron-left"></i>
       <span>بیشتر بخوانید</span>
-    </paper-button>
+    </div>
   </a>
 </article>
 {% endfor %}

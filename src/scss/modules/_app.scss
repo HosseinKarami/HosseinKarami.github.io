@@ -107,6 +107,16 @@
   color: #333;
   font-weight: bold;
   direction: ltr;
+  outline: none;
+  padding: .5em .57em;
+  width: 7rem;
+  border-radius: 3px;
+  i{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+  }
   span{
     @include position(relative, -1px 0 0 0);
   }
@@ -119,8 +129,18 @@
   font-family: WMitra;
   font-weight: bold;
   color: #333;
+  padding: .5em .57em;
+  width: 5rem;
+  border-radius: 3px;
+  text-transform: inherit;
   @include position(absolute, 0px 0 0 0px);
   direction: ltr;
+  i{
+    font-size: 1.6rem;
+    position: absolute;
+    top: 1px;
+    left: 6px;
+  }
   &:hover{
     background: #eee;
   }

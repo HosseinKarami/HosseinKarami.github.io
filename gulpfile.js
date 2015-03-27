@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
     jshint = require('gulp-jshint'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
@@ -10,15 +11,20 @@ var gulp = require('gulp'),
     cp = require('child_process'),
     package = require('./package.json');
 
+var paths = {
+  scripts: ['src/js/scripts.js', 'src/js/material/*.js']
+};
 
 var banner = [
   '/*!\n' +
-  ' * <%= package.name %>\n' +
-  ' * <%= package.title %>\n' +
-  ' * <%= package.url %>\n' +
-  ' * @author <%= package.author %>\n' +
-  ' * @version <%= package.version %>\n' +
-  ' * Copyright ' + new Date().getFullYear() + '. <%= package.license %> licensed.\n' +
+  ' +----------------------------------------------------+\n' +
+  ' * <%= package.name %>                                           *\n' +
+  ' * <%= package.title %>                                           *\n' +
+  ' * <%= package.url %>          *\n' +
+  ' * @authors <%= package.author %> *\n' +
+  ' * @version <%= package.version %>                                     *\n' +
+  ' * Copyright ' + new Date().getFullYear() + '. <%= package.license %> licensed.                      *\n' +
+  ' +----------------------------------------------------+\n' +
   ' */',
   '\n'
 ].join('');
@@ -51,14 +57,13 @@ gulp.task('css', function () {
 });
 
 gulp.task('js',function(){
-  gulp.src('src/js/scripts.js')
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+  gulp.src(paths.scripts)
     .pipe(header(banner, { package : package }))
+    .pipe(concat('scripts.js'))
     .pipe(gulp.dest('assets/js'))
     .pipe(uglify())
     .pipe(header(banner, { package : package }))
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest('assets/js'))
     .pipe(gulp.dest('_site/assets/js'))
     .pipe(browserSync.reload({stream:true, once: true}));
@@ -74,6 +79,6 @@ gulp.task('browser-sync', ['css', 'js', 'jekyll-build'], function() {
 
 gulp.task('default', ['css', 'js', 'browser-sync'], function () {
     gulp.watch("src/scss/*/*.scss", ['css']);
-    gulp.watch("src/js/*.js", ['js']);
+    gulp.watch(paths.scripts, ['js']);
     gulp.watch(['*.html', '*/*.html', '_layouts/*.html', '_posts/*', '_includes/*.html'], ['jekyll-rebuild']);
 });
