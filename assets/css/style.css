@@ -4769,7 +4769,8 @@ td, th {
       .header .about nav li {
         position: relative;
         height: 49px;
-        height: 3.0625rem; }
+        height: 3.0625rem;
+        overflow: hidden; }
         .header .about nav li a {
           color: #333;
           -webkit-transition: 100ms linear 0s;

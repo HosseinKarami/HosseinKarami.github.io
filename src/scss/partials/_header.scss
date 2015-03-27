@@ -104,6 +104,7 @@
         @include position(relative, 0 0 0 0 );
         height: 49px;
         height: 3.0625rem;
+          overflow: hidden;
         a{
           color: #333;
           transition: 100ms linear 0s;

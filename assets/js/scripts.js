@@ -1,12 +1,12 @@
 /*!
- +----------------------------------------------------+
- * HosseinKarami                                           *
- * jekyll build for hosseinkarami.com                                           *
- * http://hosseinkarami.com          *
- * @authors Hossein Karami *
- * @version 1.1.0                                     *
- * Copyright 2015. MIT licensed.                      *
- +----------------------------------------------------+
+ +-------------------------------------+
+ * HosseinKarami                       *
+ * jekyll build for hosseinkarami.com  *
+ * http://hosseinkarami.com            *
+ * @authors Hossein Karami (@_Karamii) *
+ * @version 1.1.0                      *
+ * Copyright 2015. MIT licensed.       *
+ +-------------------------------------+
  */
 (function ($, window, document, undefined) {
 
@@ -33,14 +33,14 @@
 })(jQuery, window, document);
 
 /*!
- +----------------------------------------------------+
- * HosseinKarami                                           *
- * jekyll build for hosseinkarami.com                                           *
- * http://hosseinkarami.com          *
- * @authors Hossein Karami *
- * @version 1.1.0                                     *
- * Copyright 2015. MIT licensed.                      *
- +----------------------------------------------------+
+ +-------------------------------------+
+ * HosseinKarami                       *
+ * jekyll build for hosseinkarami.com  *
+ * http://hosseinkarami.com            *
+ * @authors Hossein Karami (@_Karamii) *
+ * @version 1.1.0                      *
+ * Copyright 2015. MIT licensed.       *
+ +-------------------------------------+
  */
 /*!
  * Waves v0.6.0
