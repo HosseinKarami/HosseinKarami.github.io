@@ -9,7 +9,17 @@
   }
 
 }
-
+.js-menu-open {
+  .nav-menu{
+    i{
+      &.mdi-action-view-headline:before {
+        content: "\e702";
+        position: relative;
+        top: -11px;
+      }
+    }
+  }
+}
 
 .paginator{
   float: left;

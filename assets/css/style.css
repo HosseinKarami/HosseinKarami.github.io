@@ -4708,14 +4708,18 @@ td, th {
       @media only screen and (min-width: 81.25em) {
         .header .about .nav-menu {
           display: none; } }
-      .header .about .nav-menu core-icon {
+      .header .about .nav-menu i {
         color: #333;
         position: absolute;
         top: 1rem;
         left: 1rem;
         width: 2.5rem;
-        height: 2.5rem; }
-        .header .about .nav-menu core-icon:hover {
+        height: 2.5rem;
+        font-size: 2.5rem; }
+        .header .about .nav-menu i.mdi-action-view-headline:before {
+          position: relative;
+          top: -11px; }
+        .header .about .nav-menu i:hover {
           background: #eee; }
     .header .about nav {
       position: absolute;
@@ -5344,6 +5348,11 @@ blockquote {
   .js-menu-open body {
     -webkit-transform: translate3d(80%, 0, 0);
             transform: translate3d(80%, 0, 0); } }
+
+.js-menu-open .nav-menu i.mdi-action-view-headline:before {
+  content: "\e702";
+  position: relative;
+  top: -11px; }
 
 .paginator {
   float: left;
