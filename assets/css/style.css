@@ -5145,13 +5145,13 @@ blockquote {
   text-align: left;
   font-weight: normal;
   font-style: normal; }
-  .works.eng h1 core-icon {
+  .works.eng h1 i {
     position: relative;
-    top: -15px;
+    top: 5px;
     vertical-align: bottom; }
-.works h1 core-icon {
+.works h1 i {
   position: relative;
-  top: -12px;
+  top: 6px;
   vertical-align: bottom; }
 .works img {
   width: 100%;
