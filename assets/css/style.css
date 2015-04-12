@@ -4692,13 +4692,28 @@ td, th {
       font-size: 1rem;
       font-weight: bold; }
     .header .about .nav-menu {
-      display: block; }
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background: #eee;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      color: #333;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 0;
+      letter-spacing: 0.1em;
+      -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
+              transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: .7rem; }
       @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
         .header .about .nav-menu {
-          display: block; } }
+          display: inline-block; } }
       @media only screen and (min-width: 30.1em) {
         .header .about .nav-menu {
-          display: block; } }
+          display: inline-block; } }
       @media only screen and (min-width: 48em) {
         .header .about .nav-menu {
           display: none; } }
@@ -4708,19 +4723,49 @@ td, th {
       @media only screen and (min-width: 81.25em) {
         .header .about .nav-menu {
           display: none; } }
-      .header .about .nav-menu i {
-        color: #333;
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 2.5rem; }
-        .header .about .nav-menu i.mdi-action-view-headline:before {
-          position: relative;
-          top: -11px; }
-        .header .about .nav-menu i:hover {
-          background: #eee; }
+      .header .about .nav-menu .menu-btn {
+        display: inline-block;
+        width: 27px;
+        border: 5px solid #F5F6F5;
+        border-left-width: 0;
+        border-right-width: 0;
+        line-height: 0;
+        background: #333;
+        position: relative;
+        z-index: 1;
+        -webkit-transition: border-color 0.2s, background 0 0.35s;
+                transition: border-color 0.2s, background 0 0.35s;
+        height: 14px; }
+        .header .about .nav-menu .menu-btn:before {
+          top: -8px;
+          -webkit-transition-property: top, -webkit-transform;
+                  transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+          height: 4px;
+          content: "";
+          background: #333;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          -webkit-transition-duration: 0.35s, 0.35s;
+                  transition-duration: 0.35s, 0.35s;
+          -webkit-transition-delay: 0.35s, 0;
+                  transition-delay: 0.35s, 0; }
+        .header .about .nav-menu .menu-btn:after {
+          bottom: -8px;
+          -webkit-transition-property: bottom, -webkit-transform;
+                  transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+          height: 4px;
+          content: "";
+          background: #333;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          -webkit-transition-duration: 0.35s, 0.35s;
+                  transition-duration: 0.35s, 0.35s;
+          -webkit-transition-delay: 0.35s, 0;
+                  transition-delay: 0.35s, 0; }
     .header .about nav {
       position: absolute;
       top: 0px;
@@ -5153,11 +5198,11 @@ blockquote {
   .works.eng h1 i {
     position: relative;
     top: 5px;
-    vertical-align: bottom; }
+    vertical-align: baseline; }
 .works h1 i {
   position: relative;
   top: 6px;
-  vertical-align: bottom; }
+  vertical-align: baseline; }
 .works img {
   width: 100%;
   margin: 2rem 0; }
@@ -5349,10 +5394,19 @@ blockquote {
     -webkit-transform: translate3d(80%, 0, 0);
             transform: translate3d(80%, 0, 0); } }
 
-.js-menu-open .nav-menu i.mdi-action-view-headline:before {
-  content: "\e702";
-  position: relative;
-  top: -11px; }
+.js-menu-open .nav-menu .menu-btn {
+  background: transparent !important;
+  border-color: transparent !important; }
+  .js-menu-open .nav-menu .menu-btn:before {
+    top: 0 !important;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+  .js-menu-open .nav-menu .menu-btn:after {
+    bottom: 0 !important;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
 
 .paginator {
   float: left;

@@ -11,11 +11,19 @@
 }
 .js-menu-open {
   .nav-menu{
-    i{
-      &.mdi-action-view-headline:before {
-        content: "\e702";
-        position: relative;
-        top: -11px;
+
+    .menu-btn{
+      background: transparent !important;
+      border-color: transparent !important;
+      &:before {
+        top: 0 !important;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &:after {
+        bottom: 0 !important;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
       }
     }
   }
