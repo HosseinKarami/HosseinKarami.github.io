@@ -4961,6 +4961,10 @@ paper-ripple {
    of the button to still show through. */
   background-color: rgba(51, 51, 51, 0.35); }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .hero {
+    height: 100vh; } }
+
 footer {
   position: relative;
   margin: 0; }
