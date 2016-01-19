@@ -5,7 +5,7 @@
  * http://hosseinkarami.com            *
  * @author Hossein Karami (@_Karamii)  *
  * @version 1.1.0                      *
- * Copyright 2015. MIT licensed.       *
+ * Copyright 2016. MIT licensed.       *
  +-------------------------------------+
  */
 (function ($, window, document, undefined) {
@@ -39,7 +39,7 @@
  * http://hosseinkarami.com            *
  * @author Hossein Karami (@_Karamii)  *
  * @version 1.1.0                      *
- * Copyright 2015. MIT licensed.       *
+ * Copyright 2016. MIT licensed.       *
  +-------------------------------------+
  */
 /*!

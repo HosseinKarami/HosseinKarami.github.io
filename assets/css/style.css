@@ -1652,14 +1652,29 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -1677,7 +1692,8 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 /* Links
@@ -1691,7 +1707,8 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* Text-level semantics
@@ -1705,7 +1722,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 /**
@@ -1738,7 +1756,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -1788,7 +1807,10 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -1804,7 +1826,11 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
@@ -1824,7 +1850,8 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -1834,7 +1861,10 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -1843,13 +1873,15 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -1867,7 +1899,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -1878,7 +1911,8 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -1897,7 +1931,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -1940,7 +1975,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td, th {
+td,
+th {
   padding: 0; }
 
 @font-face {
@@ -4205,8 +4241,8 @@ td, th {
   vertical-align: middle;
   z-index: 1;
   will-change: opacity, transform;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .waves-effect .waves-ripple {
     position: absolute;
     border-radius: 50%;
@@ -4221,7 +4257,6 @@ td, th {
     -webkit-transition-property: -webkit-transform, opacity;
     transition-property: transform, opacity;
     -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
     pointer-events: none; }
   .waves-effect.waves-light .waves-ripple {
@@ -4245,7 +4280,6 @@ td, th {
 
 .waves-circle {
   -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); }
 
@@ -4290,13 +4324,13 @@ a.waves-effect .waves-ripple {
  */
 @font-face {
   font-family: 'WMitra';
-  src: url('../fonts/MitraWeb-Bold.woff') format('woff');
+  src: url("../fonts/MitraWeb-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'WMitra';
-  src: url('../fonts/MitraWeb-Regular.woff') format('woff');
+  src: url("../fonts/MitraWeb-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -4351,14 +4385,29 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -4376,7 +4425,8 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 /* Links
@@ -4390,7 +4440,8 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* Text-level semantics
@@ -4404,7 +4455,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 /**
@@ -4437,7 +4489,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -4487,7 +4540,10 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -4503,7 +4559,11 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
@@ -4523,7 +4583,8 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -4533,7 +4594,10 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -4542,13 +4606,15 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -4566,7 +4632,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -4577,7 +4644,8 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -4596,7 +4664,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -4639,7 +4708,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td, th {
+td,
+th {
   padding: 0; }
 
 .header {
@@ -4702,8 +4772,8 @@ td, th {
       display: inline-block;
       line-height: 0;
       letter-spacing: 0.1em;
-      -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
-              transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
+      -webkit-transition: background-color 0.2s linear,border-color 0.2s linear,color 0.2s linear;
+              transition: background-color 0.2s linear,border-color 0.2s linear,color 0.2s linear;
       position: absolute;
       top: 1rem;
       left: 1rem;
@@ -4733,8 +4803,8 @@ td, th {
         background: #333;
         position: relative;
         z-index: 1;
-        -webkit-transition: border-color 0.2s, background 0 0.35s;
-                transition: border-color 0.2s, background 0 0.35s;
+        -webkit-transition: border-color 0.2s,background 0 0.35s;
+                transition: border-color 0.2s,background 0 0.35s;
         height: 14px; }
         .header .about .nav-menu .menu-btn:before {
           top: -8px;
@@ -4747,10 +4817,10 @@ td, th {
           position: absolute;
           left: 0;
           width: 100%;
-          -webkit-transition-duration: 0.35s, 0.35s;
-                  transition-duration: 0.35s, 0.35s;
-          -webkit-transition-delay: 0.35s, 0;
-                  transition-delay: 0.35s, 0; }
+          -webkit-transition-duration: 0.35s,0.35s;
+                  transition-duration: 0.35s,0.35s;
+          -webkit-transition-delay: 0.35s,0;
+                  transition-delay: 0.35s,0; }
         .header .about .nav-menu .menu-btn:after {
           bottom: -8px;
           -webkit-transition-property: bottom, -webkit-transform;
@@ -4762,10 +4832,10 @@ td, th {
           position: absolute;
           left: 0;
           width: 100%;
-          -webkit-transition-duration: 0.35s, 0.35s;
-                  transition-duration: 0.35s, 0.35s;
-          -webkit-transition-delay: 0.35s, 0;
-                  transition-delay: 0.35s, 0; }
+          -webkit-transition-duration: 0.35s,0.35s;
+                  transition-duration: 0.35s,0.35s;
+          -webkit-transition-delay: 0.35s,0;
+                  transition-delay: 0.35s,0; }
     .header .about nav {
       position: absolute;
       top: 0px;
@@ -5148,9 +5218,9 @@ footer {
   left: 0px;
   direction: ltr; }
   .button i {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     position: absolute;
-    top: 1px;
+    top: 5px;
     left: 6px; }
   .button:hover {
     background: #eee; }
@@ -5187,7 +5257,7 @@ code {
   background-color: whitesmoke;
   padding: 2px 6px;
   border-radius: 3px;
-  font-size: 1rem; }
+  font-size: 1em; }
 
 blockquote {
   border-right: 4px solid;
@@ -5203,10 +5273,12 @@ blockquote {
     position: relative;
     top: 5px;
     vertical-align: baseline; }
+
 .works h1 i {
   position: relative;
   top: 6px;
   vertical-align: baseline; }
+
 .works img {
   width: 100%;
   margin: 2rem 0; }
@@ -5364,30 +5436,37 @@ blockquote {
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important; }
-  a, a:visited {
+  a,
+  a:visited {
     text-decoration: underline; }
   a[href]:after {
     content: " (" attr(href) ")"; }
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
     content: ""; }
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
   thead {
     display: table-header-group; }
-  tr, img {
+  tr,
+  img {
     page-break-inside: avoid; }
   img {
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3; }
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid; } }
 
 .js-menu-open body {
@@ -5404,19 +5483,18 @@ blockquote {
   .js-menu-open .nav-menu .menu-btn:before {
     top: 0 !important;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-        transform: rotate(45deg); }
+    transform: rotate(45deg); }
   .js-menu-open .nav-menu .menu-btn:after {
     bottom: 0 !important;
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
+    transform: rotate(-45deg); }
 
 .paginator {
   float: left;
   width: 100%;
   margin-top: 3.5rem; }
-  .paginator a, .paginator span {
+  .paginator a,
+  .paginator span {
     padding: 1rem 0;
     display: inline-block;
     font-size: 1.2rem;
@@ -5424,19 +5502,24 @@ blockquote {
     text-decoration: none;
     float: left; }
     @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
-      .paginator a, .paginator span {
+      .paginator a,
+      .paginator span {
         font-size: 1.2rem; } }
     @media only screen and (min-width: 30.1em) {
-      .paginator a, .paginator span {
+      .paginator a,
+      .paginator span {
         font-size: 1.2rem; } }
     @media only screen and (min-width: 48em) {
-      .paginator a, .paginator span {
+      .paginator a,
+      .paginator span {
         font-size: 1.5rem; } }
     @media only screen and (min-width: 62.5em) {
-      .paginator a, .paginator span {
+      .paginator a,
+      .paginator span {
         font-size: 1.5rem; } }
     @media only screen and (min-width: 81.25em) {
-      .paginator a, .paginator span {
+      .paginator a,
+      .paginator span {
         font-size: 1.5rem; } }
   .paginator a {
     color: #0000CD;
