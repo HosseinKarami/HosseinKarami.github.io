@@ -133,8 +133,23 @@ dfn {
  */
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+  font-size: 1.5em;
+    @include phone{
+      font-size: 1.5em;
+    }
+    @include tablet{
+      font-size: 1.5em;
+    }
+    @include desktop{
+      font-size: 2em;
+    }
+    @include largedesktop{
+      font-size: 2em;
+    }
+    @include biglargedesktop{
+      font-size: 2em;
+    }
 }
 
 /**

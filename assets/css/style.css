@@ -4470,8 +4470,23 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+  font-size: 1.5em; }
+  @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
+    h1 {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 30.1em) {
+    h1 {
+      font-size: 1.5em; } }
+  @media only screen and (min-width: 48em) {
+    h1 {
+      font-size: 2em; } }
+  @media only screen and (min-width: 62.5em) {
+    h1 {
+      font-size: 2em; } }
+  @media only screen and (min-width: 81.25em) {
+    h1 {
+      font-size: 2em; } }
 
 /**
  * Address styling not present in IE 8/9.
