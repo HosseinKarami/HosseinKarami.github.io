@@ -8,9 +8,24 @@
     align-items: center;
     justify-content: center;
     &.four{
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
       direction: rtl;
+      @include phone{
+        width: 100%;
+      }
+      @include tablet{
+        width: 100%;
+      }
+      @include desktop{
+        width: 50%;
+      }
+      @include largedesktop{
+        width: 50%;
+      }
+      @include biglargedesktop{
+        width: 50%;
+      }
       div{
         display: flex;
         width: 100%;

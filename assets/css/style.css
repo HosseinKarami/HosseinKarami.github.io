@@ -4950,9 +4950,24 @@ paper-ripple {
         -ms-flex-pack: center;
             justify-content: center; }
     .hero.center.four {
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
       direction: rtl; }
+      @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
+        .hero.center.four {
+          width: 100%; } }
+      @media only screen and (min-width: 30.1em) {
+        .hero.center.four {
+          width: 100%; } }
+      @media only screen and (min-width: 48em) {
+        .hero.center.four {
+          width: 50%; } }
+      @media only screen and (min-width: 62.5em) {
+        .hero.center.four {
+          width: 50%; } }
+      @media only screen and (min-width: 81.25em) {
+        .hero.center.four {
+          width: 50%; } }
       .hero.center.four div {
         display: -webkit-box;
         display: -ms-flexbox;
