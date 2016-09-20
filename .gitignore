@@ -4,3 +4,4 @@ _site
 node_modules
 .sass-cache
 *.sublime-*
+Gemfile.lock

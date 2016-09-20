@@ -7,6 +7,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &.four{
+      width: 50%;
+      margin: 0 auto;
+      direction: rtl;
+      div{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        h6{
+          font-family: WMitra;
+          margin: 1rem 0;
+          width: 50%;
+        }
+      }
+      .foot{
+        font-family: WMitra;
+        font-size: .9rem;
+        font-weight: normal;
+        padding: 0;
+        justify-content: center;
+      }
+    }
   }
   img{
     width: 200px;

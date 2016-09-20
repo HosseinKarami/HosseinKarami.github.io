@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     cp = require('child_process'),
+    shell = require('gulp-shell'),
     package = require('./package.json');
 
 var paths = {
@@ -33,13 +34,15 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-        .on('close', done); 
-});
+//gulp.task('build', shell.task(['jekyll build --watch']));
+gulp.task('build', shell.task(['bundle exec jekyll build']));
+// gulp.task('jekyll-build', function (done) {
+//     browserSync.notify(messages.jekyllBuild);
+//     return cp.spawn('bundle exec jekyll', ['build'], {stdio: 'inherit'})
+//         .on('close', done); 
+// });
 
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', ['build'], function () {
     browserSync.reload();
 });
 
@@ -69,7 +72,7 @@ gulp.task('js',function(){
     .pipe(browserSync.reload({stream:true, once: true}));
 });
 
-gulp.task('browser-sync', ['css', 'js', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['css', 'js', 'build'], function() {
     browserSync({
         server: {
             baseDir: '_site'

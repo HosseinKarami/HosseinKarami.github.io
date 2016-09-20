@@ -4949,6 +4949,30 @@ paper-ripple {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .hero.center.four {
+      width: 50%;
+      margin: 0 auto;
+      direction: rtl; }
+      .hero.center.four div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .hero.center.four div h6 {
+          font-family: WMitra;
+          margin: 1rem 0;
+          width: 50%; }
+      .hero.center.four .foot {
+        font-family: WMitra;
+        font-size: .9rem;
+        font-weight: normal;
+        padding: 0;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
   .hero img {
     width: 200px; }
     @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
@@ -5293,14 +5317,6 @@ blockquote {
 .works img {
   width: 100%;
   margin: 2rem 0; }
-
-.fourzerofour {
-  background: darkblue; }
-  .fourzerofour h1 {
-    font-family: WMitra;
-    font-weight: bold;
-    font-size: 4rem;
-    border-bottom: 5px solid red; }
 
 /**
  * Syntax highlighting styles
