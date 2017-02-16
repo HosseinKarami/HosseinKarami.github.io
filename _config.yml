@@ -2,8 +2,8 @@
 title: Hossein Karami | حسین کرمی
 email: hi@hosseinkarami.com
 description: توسعه‌دهنده رابط کاربری
-baseurl: "https://hosseinkarami.com/"
-url: "https://hosseinkarami.com"
+baseurl: "http://localhost:3000/"
+url: "http://localhost:3000"
 twitter: _Karamii
 github:  HosseinKarami
 behance: HosseinKarami
