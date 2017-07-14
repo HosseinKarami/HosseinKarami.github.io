@@ -133,3 +133,25 @@ footer{
     display: none;
   }
 }
+
+.disqus{
+  width: 100%;
+  direction: rtl;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  @include phone{
+   padding: 3rem 1rem;
+  }
+  @include tablet{
+    padding: 3rem 1rem;
+  }
+  @include desktop{
+    padding: 3rem 4rem;
+  }
+  @include largedesktop{
+    padding: 3rem 7rem;
+  }
+  @include biglargedesktop{
+    padding: 3rem 7rem;
+  }
+}

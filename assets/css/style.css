@@ -5546,3 +5546,24 @@ blockquote {
 
 .notfound footer {
   display: none; }
+
+.disqus {
+  width: 100%;
+  direction: rtl;
+  margin: 0 auto;
+  padding: 3rem 1rem; }
+  @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
+    .disqus {
+      padding: 3rem 1rem; } }
+  @media only screen and (min-width: 30.1em) {
+    .disqus {
+      padding: 3rem 1rem; } }
+  @media only screen and (min-width: 48em) {
+    .disqus {
+      padding: 3rem 4rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .disqus {
+      padding: 3rem 7rem; } }
+  @media only screen and (min-width: 81.25em) {
+    .disqus {
+      padding: 3rem 7rem; } }
