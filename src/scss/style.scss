@@ -7,20 +7,20 @@
 @charset 'UTF-8';
 
 // Mixins
-@import 'components/prefixer';
-@import 'components/mixins';
-@import 'components/color';
+// @import 'components/prefixer';
+// @import 'components/mixins';
+// @import 'components/color';
 
 // Variables;
-@import 'components/variables';
+// @import 'components/variables';
 
 // Reset
 @import 'components/normalize';
 
 // components
-@import 'components/icons-material-design';
+// @import 'components/icons-material-design';
 
-@import 'components/waves';
+// @import 'components/waves';
 
 
 @import 'mixins/_position.scss';

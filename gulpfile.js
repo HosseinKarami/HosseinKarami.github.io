@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     package = require('./package.json');
 
 var paths = {
-  scripts: ['src/js/scripts.js', 'src/js/material/*.js']
+  scripts: ['src/js/scripts.js']
 };
 
 var banner = [
