@@ -1,41 +1,13 @@
 footer {
  @include position(relative, 0 0 0 0);
-  margin:0;
-  @include phone{
-    margin:0;
-  }
-  @include tablet{
-    margin:0;
-  }
-  @include desktop{
-    margin:0 300px 0 0;
-  }
-  @include largedesktop{
-    margin:0 340px 0 0;
-  }
-  @include biglargedesktop{
-    margin:0 340px 0 0;
-  }
+  margin:0 auto;
+  width: 1200px;
+  padding: 0 1rem 0;
   p{
-    font-family: "Courier New","Courier","monospace",courier-std;
-    font-size: .9rem;
-    font-weight: 400;
-    margin: 0 1em 1em;
-    text-align: center;
-    @include phone{
-      font-size: .9rem;
-    }
-    @include tablet{
-      font-size: .9rem;
-    }
-    @include desktop{
-      font-size: 1rem;
-    }
-    @include largedesktop{
-      font-size: 1rem;
-    }
-    @include biglargedesktop{
-      font-size: 1rem;
-    }
+    font-family: GothamRoundedMedium;
+    font-size: .7rem;
+    margin: 2rem 0;
+    text-align: left;
+    color: #3d4853;
   }
 }

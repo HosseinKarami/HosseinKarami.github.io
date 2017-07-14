@@ -1,12 +1,35 @@
 @font-face {
-    font-family: 'WMitra';
-    src: url('../fonts/MitraWeb-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: Sahel;
+  src: url('../fonts/sahel/Sahel.woff') format('woff');
+  font-weight: normal;
+}
+      
+@font-face {
+  font-family: Sahel;
+  src: url('../fonts/sahel/Sahel-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url('../fonts/sahel/Sahel-Black.woff') format('woff');
+  font-weight: 900;
+}
+
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url('../fonts/gotham/gothamrnd-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GothamRoundedBook';
+    src: url('../fonts/gotham/gothamrnd-book.woff') format('woff');
 }
 @font-face {
-    font-family: 'WMitra';
-    src: url('../fonts/MitraWeb-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'GothamRoundedMedium';
+    src: url('../fonts/gotham/gothamrnd-medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'GothamRoundedLight';
+    src: url('../fonts/gotham/gothamrnd-light.woff') format('woff');
 }

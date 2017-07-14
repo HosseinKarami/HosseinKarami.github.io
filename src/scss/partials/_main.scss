@@ -1,152 +1,88 @@
-.hero {
-  // padding: 5rem 0;
-  text-align: center;
-  min-height: 100vh;
-  &.center{
+.work{
+  .workitem{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  ul{
+    margin: 0;
+    padding: 1rem 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    &.four{
-      width: 100%;
-      margin: 0 auto;
-      direction: rtl;
+    flex-wrap: wrap;
+    list-style: none;
+    @include phone{
+      justify-content: center;
+    }
+    @include tablet{
+      justify-content: center;
+    }
+    @include desktop{
+      justify-content: center;
+    }
+    @include largedesktop{
+      justify-content: initial;
+    }
+    @include biglargedesktop{
+      justify-content: initial;
+    }
+    li{
+      width: 384px;
+      height: 299.84px;
+      margin: .4rem;
       @include phone{
-        width: 100%;
+        margin: .4rem;
       }
       @include tablet{
-        width: 100%;
+        margin: .4rem;
       }
       @include desktop{
-        width: 50%;
+        margin: .44444444rem;
       }
       @include largedesktop{
-        width: 50%;
+        margin: .44444444rem;
       }
       @include biglargedesktop{
-        width: 50%;
+        margin: .44444444rem;
       }
-      div{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        h6{
-          font-family: WMitra;
-          margin: 1rem 0;
-          width: 50%;
+      a{
+        cursor: pointer;
+        .img{
+          position: relative;
+          text-align: center;
+          img{
+            transition: all .3s ease;
+          }
+          p{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,.72);
+            color: #ae9d74;
+            opacity: 0;
+            margin: 0;
+            display: flex;
+            width: 384px;
+            height: 299.84px;
+            font-family: GothamRoundedMedium,Sahel;
+            font-size: 1rem;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease;
+          }
+        }
+        &:hover{
+          .img{
+            img{
+              box-shadow: 0 2px 4px rgba(0,0,0,.5);
+            }
+            p{
+              opacity: 1;
+            }
+          }
         }
       }
-      .foot{
-        font-family: WMitra;
-        font-size: .9rem;
-        font-weight: normal;
-        padding: 0;
-        justify-content: center;
-      }
     }
   }
-  img{
-    width: 200px;
-    @include phone{
-      width: 200px;
-    }
-    @include tablet{
-      width: 250px;
-    }
-    @include desktop{
-      width: 250px;
-    }
-    @include largedesktop{
-      width: 250px;
-    }
-    @include biglargedesktop{
-      width: 250px;
-    }
-  }
-
-  h2{
-    font-family: "courier-std";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 2rem;
-    letter-spacing: -2px;
-    margin: 0;
-    @include phone{
-      font-size: 2rem;
-    }
-    @include tablet{
-      font-size: 2.5rem;
-    }
-    @include desktop{
-      font-size: 2.5rem;
-    }
-    @include largedesktop{
-      font-size: 2.5rem;
-    }
-    @include biglargedesktop{
-      font-size: 2.5rem;
-    }
-  }
-  h4{
-    font-family: "courier-std";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.7rem;
-    letter-spacing: -1px;
-    margin: 0;
-    @include phone{
-      font-size: 1.7rem;
-    }
-    @include tablet{
-      font-size: 2rem;
-    }
-    @include desktop{
-      font-size: 2rem;
-    }
-    @include largedesktop{
-      font-size: 2rem;
-    }
-    @include biglargedesktop{
-      font-size: 2rem;
-    }
-  }
-  h6{
-    font-family: "courier-std";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-    margin: 1rem auto;
-    @include phone{
-      font-size: 1rem;
-    }
-    @include tablet{
-      font-size: 1.2rem;
-    }
-    @include desktop{
-      font-size: 1.2rem;
-    }
-    @include largedesktop{
-      font-size: 1.2rem;
-    }
-    @include biglargedesktop{
-      font-size: 1.2rem;
-    }
-    a{
-      color: #444;
-      text-decoration: none;
-      &:hover{
-        color: #0000CD;
-      }
-    }
-  }
-}
-
-.waves-effect.waves-side .waves-ripple {
-   /* The alpha value allows the text and background color
-   of the button to still show through. */
-    background-color: rgba(51, 51, 51, 0.35);
-  }
-
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-.hero { height: 100vh; }
 }

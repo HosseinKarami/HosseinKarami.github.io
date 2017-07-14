@@ -1,0 +1,22 @@
+- who: Hossein Karami
+  works:
+  - name: "airmax"
+    img: assets/img/airmax.png
+    url: "work/AirMax"
+    details: "مرکز دانلود اینترنت ایرمکس"
+  - name: "ssjonline"
+    img: assets/img/ssjonline.png
+    url: "work/SSJOnline"
+    details: "واحد پهنای باند اختصاصی شرکت سریع سیستم جنوب"
+  - name: "fastshell"
+    img: assets/img/fastshell.png
+    url: "work/FastShell"
+    details: "FastShell: HTML5, Sass and JavaScript boilerplate for Gulp"
+  - name: "fifawc"
+    img: assets/img/fifawc.png
+    url: "work/FIFAWorldCup"
+    details: "جام جهانی فوتبال برزیل ۲۰۱۴"
+  - name: "imatches"
+    img: assets/img/imatches.png
+    url: "work/iMatches"
+    details: "مجموعه کبریت‌های قدیمی"

@@ -1,0 +1,22 @@
+---
+layout: work
+title:  "مرکز دانلود اینترنت ایرمکس"
+permalink: work/AirMax/
+urls: http://airmax.ir/dl
+urlname: AirMax.ir
+itemname: airmax
+year: "مرداد ۱۳۹۵" 
+detail: به درخواست شرکت سریع سیستم جنوب دانلودسنتر ایرمکس برای مشترکین اینترنت این شرکت ایجاد گردید، همچنین بنا به سیاست‌های آن شرکت، سایت مورد نظر فقط برای کاربران سرویس اینترنت ایرمکس قابل دسترس می باشد.
+comments: true
+---
+
+
+<nav class="workassets">
+  <ul>
+    <li><img src="{{site.url}}/assets/img/works/airmax/1.png" alt="{{page.urlname}}" /></li>
+    <li><img src="{{site.url}}/assets/img/works/airmax/2.png" alt="{{page.urlname}}" /></li>
+    <li><img src="{{site.url}}/assets/img/works/airmax/3.png" alt="{{page.urlname}}" /></li>
+    <li><img src="{{site.url}}/assets/img/works/airmax/4.png" alt="{{page.urlname}}" /></li>
+    <li><img src="{{site.url}}/assets/img/works/airmax/5.png" alt="{{page.urlname}}" /></li>
+  </ul>
+</nav>

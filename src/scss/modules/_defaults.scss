@@ -5,9 +5,28 @@
 }
 html {
   font-size: 100%;
+  border: 10px solid #3D4853;
+  overflow-x: hidden;
+  @include phone{
+    border: 10px solid #3D4853;
+  }
+  @include tablet{
+    border: 10px solid #3D4853;
+  }
+  @include desktop{
+    border: 20px solid #3D4853;
+  }
+  @include largedesktop{
+    border: 20px solid #3D4853;
+  }
+  @include biglargedesktop{
+    border: 20px solid #3D4853;
+  }
 }
+@keyframes fadeDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
 body {
-  font: 400 1em/1.6 'Helvetica Neue', Helvetica, Arial;
+  font: 400 1em/1.6 'Helvetica Neue',Helvetica,Arial;
   color: #444;
-  transition: all 0.3s ease;
+    transition: all ease-out 600ms;
+  animation: fadeDown 1s ease;
 }

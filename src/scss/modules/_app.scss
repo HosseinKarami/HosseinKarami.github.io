@@ -1,150 +1,129 @@
 .main{
   @include position(relative, 0 0 0 0);
-  margin:0;
-  min-height: 100vh;
+  width: 100%;
+  direction: rtl;
+  margin: 0 auto;
+  padding: 3rem 1rem;
   @include phone{
-    margin:0;
+   padding: 3rem 1rem;
   }
   @include tablet{
-    margin:0;
+    padding: 3rem 1rem;
   }
   @include desktop{
-    margin:0 300px 0 0;
+    padding: 3rem 4rem;
   }
   @include largedesktop{
-    margin:0 340px 0 0;
+    padding: 3rem 7rem;
   }
   @include biglargedesktop{
-    margin:0 340px 0 0;
+    padding: 3rem 7rem;
   }
-  .container{
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 100%;
-    text-align: right;
-    direction: rtl;
-    padding: 2rem 1rem 1rem;
-    @include phone{
-      padding: 2rem 1rem 1rem;
-    }
-    @include tablet{
-      padding: 2rem 1rem 1rem;
-    }
-    @include desktop{
-      padding: 3rem 2rem 1rem;
-    }
-    @include largedesktop{
-      padding: 3rem 2rem 1rem;
-    }
-    @include biglargedesktop{
-      padding: 3rem 5rem 1rem;
-    }
-    article{
-      @include position(relative, 0 0 0 0);
-      h1{
-        font-family: WMitra, "courier-std";
-        margin-bottom: 0;
-        a{
-          color: #333;
-          transition: 200ms linear 0s;
-          text-decoration: none;
-          outline: none;
-          &:hover{
-            color: #0000CD;
-          }
+  .mainheader{
+    padding: 0 0 2rem;
+    flex-direction: column;
+    .titlehead{
+      width: 100%;
+      a{
+        color: #3D4853;
+        transition: 200ms linear 0s;
+        text-decoration: none;
+        outline: none;
+        &:hover{
+          color: #3B73E2;
+        }
+        h1{
+          font-family: GothamRoundedMedium,Sahel;
+          font-size: 1.625rem;
+          margin: 0rem 0 2rem;
         }
       }
-      h4{
-        font-family: WMitra, "courier-std";
-        font-weight: bold;
-        margin-top: 0;
+    }
+    
+    .bodyhead{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      @include phone{
+        align-items: flex-start;
+        flex-direction: column;
       }
-      .content{
-        font-family: WMitra, "courier-std";
-        font-size: 1.25rem;
-        font-weight: normal;
-        .imgpost{
-          position: relative;
-          img{
-            width: 100%;
-          }
-          .cc{
-            font-size: .66667rem;
-            line-height: 2.3;
-            position: absolute;
-            bottom: .8em;
-            left: .5em;
-            color: #333;
+      @include tablet{
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      @include desktop{
+        align-items: center;
+        flex-direction: row;
+      }
+      @include largedesktop{
+        align-items: center;
+        flex-direction: row;
+      }
+      @include biglargedesktop{
+        align-items: center;
+        flex-direction: row;
+      }
+      ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 300px;
+        li{
+          display: flex;
+          align-items: center;
+          padding: .5rem 0;
+          font-family: GothamRoundedMedium,Sahel;
+          a{
+            color:#3d4853;
             text-decoration: none;
-            border-bottom: none;
-            z-index: 1;
+            outline: none;
+            transition: 200ms linear 0s;
             &:hover{
-              color: #0000CD;
+              color: #3B73E2;
             }
           }
-        }
-        p{
-          span{
-            font-size: .9em;
+          svg{
+            margin-left: 1rem;
           }
         }
+      }
+      p{
+        font-family: GothamRoundedMedium,Sahel;;
+        line-height: 2;
         a{
+          color:#3B73E2;
           text-decoration: none;
-          border-bottom: 1px dotted #0000CD;
-          color: #0000CD;
-          transition: 100ms linear 0s;
+          outline: none;
+          transition: 200ms linear 0s;
           &:hover{
-            color: #444;
+            color: #3d4853;
           }
         }
       }
     }
   }
-}
-.more{
-  font-family: WMitra;
-  color: #333;
-  font-weight: bold;
-  direction: ltr;
-  outline: none;
-  padding: .5em .57em;
-  width: 7rem;
-  border-radius: 3px;
-  i{
-    font-size: 1.5rem;
-    position: absolute;
-    top: 2px;
-    left: 8px;
-  }
-  span{
-    @include position(relative, -1px 0 0 0);
-  }
-  &:hover{
-    background: #eee;
+  .workassets{
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li{
+        img{
+          max-width: 100%;
+          box-shadow:0 2px 4px rgba(61, 72, 83, .72);
+          margin: .5rem 0;
+        }
+      }
+    }
   }
 }
 
-.button{
-  font-family: WMitra;
-  font-weight: bold;
-  color: #333;
-  padding: .5em .57em;
-  width: 5rem;
-  border-radius: 3px;
-  text-transform: inherit;
-  @include position(absolute, 0px 0 0 0px);
-  direction: ltr;
-  i{
-    font-size: 1.2rem;
-    position: absolute;
-    top: 5px;
-    left: 6px;
-  }
-  &:hover{
-    background: #eee;
-  }
-}
+
 
 pre{
   font-size: 1rem;
@@ -160,15 +139,17 @@ pre{
 hr{
   border-bottom-color: #E1E1E1;
   border-top: 0;
-  margin: 4rem auto;
+  margin: 3rem auto;
+  max-width: 85%;
   position: relative;
+  
   &:after{
     content: "§";
     display: block;
     position: absolute;
     background-color: #FFF;
     left: 50%;
-    top: -17px;
+    top: -20px;
     font-size: 24px;
     font-size: 1.5rem;
     padding: 0 10px;
@@ -190,30 +171,7 @@ blockquote{
   margin: 0;
 }
 
-.works{
-  &.eng{
-    h1{
-      direction: ltr;
-      text-align: left;
-      font-weight: normal;
-      font-style: normal;
-      i{
-        position: relative;
-        top: 5px;
-        vertical-align: baseline;
-      }
-    }
-  }
-  h1{
-    i{
-      position: relative;
-      top: 6px;
-      vertical-align: baseline;
-    }
-  }
-  img{
-    width: 100%;
-    margin: 2rem 0;
-  }
-}
 
+.en{
+  text-align: left;
+}

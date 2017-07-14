@@ -2,13 +2,21 @@
 layout: default
 ---
 
-<div class="hero center">
-      <img src="assets/img/hk@3x.png" />
-      <h2>Hi, I'm Hossein Karami</h2>
-      <h4>Front-End Developer</h4>
-      <h6>
-        <a href="/works">WORKS</a> -
-        {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank">TWITTER</a>{% endif %} -
-        {% if site.github %}<a href="https://github.com/{{ site.github }}" target="_blank">GITHUB</a>{% endif %}
-      </h6>
-    </div>
+<section class="work">
+  <div class="workitem">
+    {% for item in site.data.work %}
+  <ul>
+    {% for project in item.works %}
+    <li>
+      <a href="{{project.url}}">
+        <div class="img">
+          <img width="384" height="299.84" src="{{site.url}}/{{project.img}}">
+          <p>{{project.details}}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  </div>
+</section>

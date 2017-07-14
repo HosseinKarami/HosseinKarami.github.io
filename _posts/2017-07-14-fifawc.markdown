@@ -1,0 +1,20 @@
+---
+layout: work
+title:  "جام جهانی فوتبال برزیل ۲۰۱۴"
+permalink: work/FIFAWorldCup/
+urls: http://fifawc.ir
+urlname: fifawc.ir
+itemname: FIFAWorldCup
+year: "خرداد ۱۳۹۳" 
+detail: وبسایت fifawc.ir خرداد ماه سال ۱۳۹۳ در چند روز مانده به آغاز مسابقات جام‌جهانی فوتبال ایجاد گردید، هدف از ایجاد این وبسایت ایجاد چالش و خودآزمایی در کار با Jekyll بوده است.
+comments: true
+---
+
+
+<nav class="workassets">
+  <ul>
+    <li><img src="{{site.url}}/assets/img/works/fifawc/1.jpg" alt="{{page.urlname}}" /></li>
+    <li><img src="{{site.url}}/assets/img/works/fifawc/2.jpg" alt="{{page.urlname}}" /></li>
+    <li><img src="{{site.url}}/assets/img/works/fifawc/3.png" alt="{{page.urlname}}" /></li>
+  </ul>
+</nav>
