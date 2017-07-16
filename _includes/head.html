@@ -4,9 +4,10 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, minimal-ui">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link href="//plus.google.com/+HosseinKarami" rel="author">
     <link rel="stylesheet" href="{{ "assets/css/style.min.css" | prepend: site.baseurl }}">
-
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.url }}/assets/img/favicon-96x96.png">
     <meta property="og:url" content="https://hosseinkarami.com{% if page.url %}{{ page.url }}{% else %}{{ site.url }}{% endif %}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}حسین کرمی{% endif %}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 360 }}{% else %}{{ site.description }}{% endif %}">
