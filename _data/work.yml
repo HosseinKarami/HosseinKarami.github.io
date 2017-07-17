@@ -1,5 +1,9 @@
 - who: Hossein Karami
   works:
+  - name: "reactstarterkit"
+    img: assets/img/react.png
+    url: "work/React-Starter-Kit"
+    details: "React Starter Kit - Fiercely quick front-end boilerplate and workflows, React.js, Babel, PostCSS, Webpack"
   - name: "airmax"
     img: assets/img/airmax.png
     url: "work/AirMax"
