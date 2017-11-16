@@ -10,21 +10,21 @@
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    @include phone{
-      justify-content: center;
-    }
-    @include tablet{
-      justify-content: center;
-    }
-    @include desktop{
-      justify-content: center;
-    }
-    @include largedesktop{
-      justify-content: initial;
-    }
-    @include biglargedesktop{
-      justify-content: initial;
-    }
+    // @include phone{
+    //   justify-content: center;
+    // }
+    // @include tablet{
+    //   justify-content: center;
+    // }
+    // @include desktop{
+    //   justify-content: center;
+    // }
+    // @include largedesktop{
+    //   justify-content: initial;
+    // }
+    // @include biglargedesktop{
+    //   justify-content: initial;
+    // }
     li{
       width: 384px;
       height: 299.84px;
