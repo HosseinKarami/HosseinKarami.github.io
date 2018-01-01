@@ -5,7 +5,7 @@
  * http://hosseinkarami.com            *
  * @author Hossein Karami (@_Karamii)  *
  * @version 1.1.0                      *
- * Copyright 2017. MIT licensed.       *
+ * Copyright 2018. MIT licensed.       *
  +-------------------------------------+
  */
 (function ($, window, document, undefined) {
