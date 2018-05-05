@@ -2,7 +2,7 @@
 layout: work
 title:  "جام جهانی فوتبال برزیل ۲۰۱۴"
 permalink: work/FIFAWorldCup/
-urls: http://fifawc.ir
+urls: https://hosseinkarami.com/fifawc
 urlname: fifawc.ir
 itemname: FIFAWorldCup
 year: "خرداد ۱۳۹۳" 
