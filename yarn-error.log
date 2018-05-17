@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js add browser-sync gulp gulp-autoprefixer gulp-concat gulp-cssnano gulp-header gulp-jshint gulp-rename gulp-sass gulp-shell gulp-uglify
+
+PATH: 
+  /Users/hosseinkarami/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  8.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/hosseinkarami/Work/HosseinKarami/node_modules/ajv'
+
+npm manifest: 
+  {
+    "name": "HosseinKarami",
+    "title": "jekyll build for hosseinkarami.com",
+    "author": "Hossein Karami (@_Karamii)",
+    "url": "http://hosseinkarami.com",
+    "version": "1.1.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/HosseinKarami/HosseinKarami.github.io.git"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.13.0",
+      "gulp": "^3.9.1",
+      "gulp-autoprefixer": "^2.3.1",
+      "gulp-concat": "^2.6.0",
+      "gulp-cssnano": "^2.1.2",
+      "gulp-header": "^1.8.7",
+      "gulp-jshint": "^1.12.0",
+      "gulp-rename": "^1.2.2",
+      "gulp-sass": "^2.3.2",
+      "gulp-shell": "^0.5.2",
+      "gulp-uglify": "^1.5.4",
+      "lodash": "^4.16.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

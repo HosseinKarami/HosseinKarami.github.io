@@ -1,5 +1,9 @@
 - who: Hossein Karami
   works:
+  - name: "WorldCup2018"
+    img: assets/img/fifaworldcup.png
+    url: "work/WorldCup2018"
+    details: "جام جهانی روسیه ۲۰۱۸"
   - name: "reactstarterkit"
     img: assets/img/react.png
     url: "work/React-Starter-Kit"

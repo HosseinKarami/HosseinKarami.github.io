@@ -55,7 +55,8 @@
     clear: both; }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
@@ -103,7 +104,8 @@ body {
   font: 400 1em/1.6 'Helvetica Neue',Helvetica,Arial;
   color: #444;
   -webkit-transition: all ease-out 600ms;
-          transition: all ease-out 600ms;
+  -o-transition: all ease-out 600ms;
+  transition: all ease-out 600ms;
   -webkit-animation: fadeDown 1s ease;
           animation: fadeDown 1s ease;
   overflow-x: hidden; }
@@ -174,7 +176,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -212,7 +215,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -387,7 +391,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -422,7 +427,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -589,7 +595,8 @@ header {
       text-decoration: none;
       color: #3D4853;
       -webkit-transition: color 0.1s ease-in-out;
-              transition: color 0.1s ease-in-out; }
+      -o-transition: color 0.1s ease-in-out;
+      transition: color 0.1s ease-in-out; }
       header .head a:hover {
         color: #536270; }
     header .head h1 {
@@ -615,7 +622,8 @@ header {
         text-decoration: none;
         color: #3D4853;
         -webkit-transition: color 0.1s ease-in-out;
-                transition: color 0.1s ease-in-out; }
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out; }
         header .head-nav ul li a:hover {
           color: #3B73E2; }
 
@@ -635,9 +643,36 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   list-style: none; }
+  @media only screen and (min-device-width: 20em) and (max-device-width: 30em) {
+    .work ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media only screen and (min-width: 30.1em) {
+    .work ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media only screen and (min-width: 48em) {
+    .work ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media only screen and (min-width: 62.5em) {
+    .work ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media only screen and (min-width: 81.25em) {
+    .work ul {
+      -webkit-box-pack: initial;
+          -ms-flex-pack: initial;
+              justify-content: initial; } }
   .work ul li {
     width: 384px;
     height: 299.84px;
@@ -664,7 +699,8 @@ header {
         text-align: center; }
         .work ul li a .img img {
           -webkit-transition: all .3s ease;
-                  transition: all .3s ease; }
+          -o-transition: all .3s ease;
+          transition: all .3s ease; }
         .work ul li a .img p {
           position: absolute;
           top: 0;
@@ -689,9 +725,11 @@ header {
               -ms-flex-pack: center;
                   justify-content: center;
           -webkit-transition: all .3s ease;
-                  transition: all .3s ease; }
+          -o-transition: all .3s ease;
+          transition: all .3s ease; }
       .work ul li a:hover .img img {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
       .work ul li a:hover .img p {
         opacity: 1; }
 
@@ -759,7 +797,8 @@ footer {
       .main .mainheader .titlehead a {
         color: #3D4853;
         -webkit-transition: 200ms linear 0s;
-                transition: 200ms linear 0s;
+        -o-transition: 200ms linear 0s;
+        transition: 200ms linear 0s;
         text-decoration: none;
         outline: none; }
         .main .mainheader .titlehead a:hover {
@@ -844,7 +883,8 @@ footer {
             text-decoration: none;
             outline: none;
             -webkit-transition: 200ms linear 0s;
-                    transition: 200ms linear 0s; }
+            -o-transition: 200ms linear 0s;
+            transition: 200ms linear 0s; }
             .main .mainheader .bodyhead ul li a:hover {
               color: #3B73E2; }
           .main .mainheader .bodyhead ul li svg {
@@ -857,7 +897,8 @@ footer {
           text-decoration: none;
           outline: none;
           -webkit-transition: 200ms linear 0s;
-                  transition: 200ms linear 0s; }
+          -o-transition: 200ms linear 0s;
+          transition: 200ms linear 0s; }
           .main .mainheader .bodyhead p a:hover {
             color: #3d4853; }
   .main .workassets ul {
@@ -876,7 +917,8 @@ footer {
             align-items: center; }
     .main .workassets ul li img {
       max-width: 100%;
-      box-shadow: 0 2px 4px rgba(61, 72, 83, 0.72);
+      -webkit-box-shadow: 0 2px 4px rgba(61, 72, 83, 0.72);
+              box-shadow: 0 2px 4px rgba(61, 72, 83, 0.72);
       margin: .5rem 0; }
 
 pre {
@@ -1065,7 +1107,8 @@ blockquote {
   * {
     background: transparent !important;
     color: #000 !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     text-shadow: none !important; }
   a,
   a:visited {
