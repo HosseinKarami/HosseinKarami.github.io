@@ -2,7 +2,7 @@
 layout: work
 title: "جام جهانی روسیه ۲۰۱۸"
 permalink: work/WorldCup2018/
-urls: https://fifawc.ir/
+urls: http://fifawc.ir/
 urlname: WorldCup2018
 itemname: WorldCup2018
 year: "اردیبهشت ۱۳۹۷" 
