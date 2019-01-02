@@ -5,7 +5,7 @@
  * http://hosseinkarami.com            *
  * @author Hossein Karami (@_Karamii)  *
  * @version 1.1.0                      *
- * Copyright 2018. MIT licensed.       *
+ * Copyright 2019. MIT licensed.       *
  +-------------------------------------+
  */
 @charset "UTF-8";@font-face{font-family:Sahel;src:url(../fonts/sahel/Sahel.woff) format("woff");font-weight:400}@font-face{font-family:Sahel;src:url(../fonts/sahel/Sahel-Bold.woff) format("woff");font-weight:700}@font-face{font-family:Sahel;src:url(../fonts/sahel/Sahel-Black.woff) format("woff");font-weight:900}@font-face{font-family:GothamRoundedMedium;src:url(../fonts/gotham/gothamrnd-medium.woff) format("woff")}.clear:after,.clear:before{content:" ";display:table}.clear{*zoom:1}.clear:after{clear:both}*{box-sizing:border-box;font-smoothing:antialiased;text-rendering:optimizeLegibility}html{font-size:100%;border:10px solid #3d4853;overflow-x:hidden}@media only screen and (min-device-width:20em) and (max-device-width:30em){html{border:10px solid #3d4853}}@media only screen and (min-width:30.1em){html{border:10px solid #3d4853}}@media only screen and (min-width:48em){html{border:20px solid #3d4853}}@media only screen and (min-width:62.5em){html{border:20px solid #3d4853}}@media only screen and (min-width:81.25em){html{border:20px solid #3d4853}}@keyframes a{0%{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}body{font:400 1em/1.6 Helvetica Neue,Helvetica,Arial;color:#444;transition:all .6s ease-out;animation:a 1s ease;overflow-x:hidden}
